@@ -131,13 +131,13 @@ section {
   margin-top: 10px;
   letter-spacing: 0.5px;
 }
-.call_to_action{
-  display:inline-flex ;
+.call_to_action {
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-.CTA_buttons a{
+.CTA_buttons a {
   margin: 20px;
   padding: 10px 40px;
   display: block;
@@ -315,8 +315,8 @@ section {
 }
 .skill_section_details_paragraph {
   padding: 5%;
-  font-size: 15px;
   text-align: left;
+  font-size: 15px;
   line-height: 1.8;
   letter-spacing: 2px;
 }
@@ -357,7 +357,7 @@ section {
 .project_section_watermark {
   position: absolute;
   left: 3%;
-  z-index: 1;
+  z-index: -1;
   display: inline-block;
   margin: auto;
   width: 100%;
@@ -428,78 +428,87 @@ section {
   bottom: -8%;
   z-index: -1;
 }
-.project_photo_container {
-  width: 100%;
-  display: grid;
-  grid-template-rows: repeat(13, 1fr);
-  grid-template-columns: repeat(13, 1fr);
-  grid-gap: 10px;
-  margin-top: 50px;
-  height: 180vh;
+.projects_container {
+  width: 90%;
+  min-height: 100vh;
+  font-family: section_text;
+  display: block;
+  margin: auto;
 }
-.project1 {
-  grid-row: 1/4;
-  grid-column: 1/7;
-  background-image: url(/images/project_1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 2;
-}
-.project2 {
-  grid-row: 2/7;
-  grid-column: 8/14;
-  background-image: url(/images/project_2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.project3 {
-  grid-row: 5/10;
-  grid-column: 1/7;
-  background-image: url(/images/project_3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.project4 {
-  grid-row: 8/12;
-  grid-column: 8/14;
-  background-image: url(/images/project_4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.project5 {
-  grid-row: 11/14;
-  grid-column: 1/7;
-  background-image: url(/images/project_5.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 .prj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem auto;
   position: relative;
+}
+
+.prj_img img {
+  height: 130%;
+  width: 130%;
+}
+.prj_left {
+  flex: 3;
+  position: relative;
+}
+.prj_right {
+  flex: 4;
+  position: relative;
+  left: -100px;
+  padding: 2rem;
   z-index: 2;
-  transition: 0.6s all ease-in-out;
+  background-color: rgba(10, 10, 10, 1);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.9);
 }
-.prj::after {
-  content: "^";
-  text-align: center;
-  width: 101%;
-  height: 30px;
-  background: linear-gradient(rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.9) 90%);
-  position: absolute;
-  z-index: 4;
-  left: -1%;
-  bottom: -1%;
-  transition: 0.5s all ease-in-out;
-  border-radius: 50% 50% 0 0;
+
+.prj:nth-child(even) {
+  flex-direction: row-reverse;
 }
-.prj:hover {
-  transform: scale(1.05);
+.prj:nth-child(even) .prj_right {
+  left: 50px;
 }
-.prj:hover::after {
-  content: "";
-  border-radius: 0;
-  height: 100%;
+.prj:nth-child(even) .prj_left {
+  right: 100px;
+}
+.prj_right p{
+  margin-top: 1rem;
+}
+
+.prj_title{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.prj_subtitle{
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 2px;
+}
+
+.prj_desc{
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+
+.prj_btn {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.prj_btn a {
+  padding: 10px ;
+}
+
+.bi{
+ color: #31f7ff;
+ font-size: 20px;
+ margin: 1rem;
+ transition: 0.5s;
+}
+
+.prj_btn:hover .bi{
+  color: white;
 }
 
 /***************************** Project Section End ******************************************/
@@ -785,7 +794,7 @@ section {
   .hero_tagline {
     font-size: 12px;
   }
-  .CTA_buttons a{
+  .CTA_buttons a {
     font-size: 15px;
     padding: 10px 40px;
   }
@@ -848,7 +857,7 @@ section {
     width: 50%;
     left: 30%;
   }
-  
+
   .about_button::before {
     position: absolute;
     top: -150%;
@@ -923,7 +932,6 @@ section {
 }
 /********************************* Small Tablet Responsive *************************/
 @media screen and (max-width: 900px) {
-
   body {
     cursor: default;
   }
@@ -947,7 +955,7 @@ section {
     font-size: 10px;
   }
 
-  .CTA_buttons a{
+  .CTA_buttons a {
     padding: 7px 40px;
   }
 
@@ -1009,7 +1017,7 @@ section {
     margin-top: 5%;
     left: 27%;
   }
- 
+
   .about_button::before {
     top: -250%;
     font-size: 10px;
@@ -1091,7 +1099,7 @@ section {
   .third_line {
     font-size: 15px;
   }
-  .CTA_buttons a{
+  .CTA_buttons a {
     font-size: 12px;
     padding: 5px 40px;
   }
@@ -1199,19 +1207,19 @@ section {
 /********************************* Wide Mobile Responsive Ends *************************/
 /********************************* Mobile Responsive Start *************************/
 @media screen and (max-width: 500px) {
-  .hero_intro{
+  .hero_intro {
     padding: 35% 0 0 0;
   }
   .name_text {
     font-size: 25px;
     letter-spacing: 4px;
   }
-  .hero_tagline{
+  .hero_tagline {
     margin-top: 20px;
     font-size: 13px;
     letter-spacing: 2px;
   }
-  .CTA_buttons a{
+  .CTA_buttons a {
     padding: 5px 30px;
   }
   .about_section_watermark {
@@ -1297,7 +1305,7 @@ section {
     font-weight: 700;
     letter-spacing: 4px;
     z-index: -1;
-    display: none;
+    /* display: none; */
   }
   .skill_heading {
     left: -20%;
