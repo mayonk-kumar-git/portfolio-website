@@ -105,22 +105,25 @@ section {
 }
 .name_text {
   display: inline;
-  font-size: 55px;
+  /* font-size: 55px; */
+  font-size: 35px;
   font-weight: 900;
   color: #31f7ff;
   position: relative;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
 }
 .name_text::after {
   content: " ";
   position: absolute;
   width: 100%;
-  top: 93%;
+  top: 95%;
   left: 0;
-  height: 1.5px;
+  height: 1px;
   background-color: #fff;
 }
 .third_line {
+  margin-top: 10px;
   font-size: 30px;
   letter-spacing: 2px;
 }
@@ -138,28 +141,9 @@ section {
   margin: 20px;
   padding: 10px 40px;
   display: block;
+  width: 200px;
 }
 
-.CTA_Hire_Button a{
-  color: white;
-  font-weight: 700;
-}
-
-.CTA_Hire_Button a:hover::after {
-  background-color: #ff8130;
-}
-.CTA_Hire_Button a::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  background-color: #31f7ff;
-  transition: 0.5s all ease-in-out;
-}
 /***************************** Hero Section End ******************************************/
 /***************************** About Section Start ******************************************/
 .about_section {
@@ -188,7 +172,7 @@ section {
 }
 
 .personal_image {
-  flex-basis: 60%;
+  flex-basis: 56%;
 }
 
 .left_profile_pic_container {
@@ -250,11 +234,11 @@ section {
 }
 
 .section_text {
-  flex-basis: 45%;
+  flex-basis: 47%;
   font-family: section_text;
   position: relative;
   z-index: 7;
-  top: -65px;
+  top: -85px;
 }
 
 .heading {
@@ -275,7 +259,7 @@ section {
   font-size: 15px;
   text-align: right;
   line-height: 1.5;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .about_button {
   margin-top: 4%;
@@ -344,11 +328,11 @@ section {
   padding: 2% 9%;
 }
 .skill_button::before {
-  content: "Want to test my skills";
+  content: "Have a walk through my projects";
   color: rgba(255, 255, 255, 0.5);
   font-size: 10px;
   letter-spacing: 2px;
-  margin: auto 12% auto 5%;
+  margin: auto 5%;
 }
 
 .skill_image {
