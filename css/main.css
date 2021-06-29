@@ -364,7 +364,6 @@ section {
   transform: scale(1.05);
 }
 
-
 /***************************** Skills Section End ******************************************/
 /***************************** Project Section Start ******************************************/
 .project_section {
@@ -911,24 +910,27 @@ section {
     font-size: 15px;
     left: -35%;
   }
+  .skill_section_text {
+    top: -20px;
+  }
   .skill_section_details_paragraph {
-    font-size: 10px;
+    font-size: 15px;
   }
   .skill_button {
-    margin-top: 10%;
+    margin-top: 5%;
     text-align: center;
     left: -9%;
   }
   .skill_button a {
-    padding: 1.2% 9%;
+    padding: 2% 9%;
   }
   .skill_button::before {
     position: absolute;
-    top: -190%;
+    top: -270%;
     left: 50%;
     width: 150%;
     transform: translateX(-50%);
-    font-size: 7px;
+    font-size: 10px;
     margin: 5% 0;
   }
   .skill_image img {
@@ -1259,7 +1261,7 @@ section {
   .CTA_buttons a {
     padding: 5px 30px;
   }
-  .call_to_action{
+  .call_to_action {
     display: flex;
     flex-direction: column;
   }
