@@ -357,7 +357,7 @@ section {
   height: 100px;
   position: relative;
   z-index: 2;
-  transition: 0.5s transform ease-in-out;
+  transition: 0.3s transform ease-in-out;
 }
 .skill_image img:hover {
   transform: scale(1.05);
