@@ -14,6 +14,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -1258,14 +1259,11 @@ section {
   .CTA_buttons a {
     padding: 5px 30px;
   }
+  .call_to_action{
+    display: flex;
+    flex-direction: column;
+  }
   .about_section_watermark {
-    width: 100%;
-    overflow: hidden;
-    opacity: 0.2;
-    top: 0%;
-    font-size: 70px;
-    font-weight: 700;
-    letter-spacing: 8px;
     display: none;
   }
   .personal_image {
@@ -1341,7 +1339,7 @@ section {
     font-weight: 700;
     letter-spacing: 4px;
     z-index: -1;
-    /* display: none; */
+    display: none;
   }
   .skill_heading {
     left: -20%;
