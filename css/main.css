@@ -445,7 +445,7 @@ section {
   z-index: -1;
 }
 .projects_container {
-  width: 90%;
+  width: 100%;
   min-height: 100vh;
   font-family: section_text;
   display: block;
@@ -534,7 +534,7 @@ section {
 .prj_btn:hover .bi {
   color: white;
 }
-.prj_btn:hover .bi-arrow-right {
+.bi-arrow-right {
   animation: repositoryArrow 1s infinite alternate-reverse;
 }
 
