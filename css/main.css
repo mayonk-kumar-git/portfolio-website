@@ -1345,6 +1345,7 @@ section {
 }
 /********************************* Wide Mobile Responsive Ends *************************/
 /********************************* Mobile Responsive Start *************************/
+/* 400px is width of a modern mobile screen size */
 @media screen and (max-width: 500px) {
   .hero_intro {
     padding: 35% 0 0 0;
