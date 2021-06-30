@@ -1488,17 +1488,32 @@ section {
     font-size: 8px;
   }
 
-  .prj{
+  .prj {
     margin: -20rem 0;
+  }
+
+  .prj_title{
+    line-height: 1.1;
+    font-size: 13px;
+    /* font-weight: lighter; */
+  }
+  .prj_img img {
+    height: 400px;
+    width: 300px;
   }
 
   .prj_right {
     width: 85%;
     line-height: 1;
+    padding: 1rem;
   }
   .prj:nth-child(even) .prj_right {
     width: 85%;
     line-height: 1;
+    padding: 1rem;
+  }
+  .prj:nth-child(1) .prj_right {
+    padding: 1rem 0.5rem;
   }
 
   .services_section_watermark {
