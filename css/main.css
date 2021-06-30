@@ -490,7 +490,7 @@ section {
   left: 50px;
 }
 .prj:nth-child(even) .prj_left {
-  right: 300px;
+  right: 250px;
 }
 .prj_right p {
   margin-top: 1rem;
@@ -818,7 +818,7 @@ section {
     padding: 4% 20%;
     font-size: 12px;
   }
- 
+
   .name_text {
     font-size: 40px;
     letter-spacing: 4px;
@@ -946,10 +946,10 @@ section {
     font-size: 10px;
   }
 
-  .prj:nth-child(1) .prj_right{
+  .prj:nth-child(1) .prj_right {
     padding: 1rem 2rem;
   }
-  .prj:nth-child(1) .prj_desc{
+  .prj:nth-child(1) .prj_desc {
     line-height: 1.5;
   }
 
@@ -983,7 +983,7 @@ section {
   }
 }
 /********************************* Small Tablet Responsive *************************/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
   body {
     cursor: default;
   }
@@ -1116,6 +1116,67 @@ section {
   .project_subHeading {
     letter-spacing: 3px;
   }
+
+  .prj {
+    flex-direction: column;
+    margin: -8rem 0;
+  }
+
+  .prj:nth-child(1) {
+    margin-top: 5rem;
+  }
+  .prj_img img {
+    height: 500px;
+    width: 500px;
+  }
+
+  .prj_title {
+    font-size: 15px;
+  }
+  .prj_subtitle {
+    font-size: 11px;
+  }
+  .prj_desc {
+    font-size: 12px;
+  }
+  .prj_left {
+    flex: 1;
+    left: 0;
+    right: 0;
+  }
+  .prj_right {
+    flex: 1;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55%;
+    top: -250px;
+  }
+
+  .prj:nth-child(even) {
+    flex-direction: column;
+  }
+  .prj:nth-child(even) .prj_right {
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 55%;
+    top: -250px;
+  }
+  .prj:nth-child(even) .prj_left {
+    right: 0;
+  }
+  .prj_right p {
+    margin-top: 1rem;
+  }
+
+  .prj_btn a {
+    padding: 10px 20px;
+  }
+
   .services_section_watermark {
     /* font-size: 120px;
     top: 0;
@@ -1137,10 +1198,10 @@ section {
   }
 }
 /********************************* Wide Mobile Responsive Start *************************/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .section_button a {
     padding: 5% 18%;
-    font-size: 9px;
+    font-size: 10px;
   }
   .hero_intro {
     padding: 20% 0 0 0;
@@ -1235,6 +1296,24 @@ section {
     /* font-size: 80px;
     left: 10%; */
     display: none;
+  }
+  .prj_img img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .prj_right {
+    width: 65%;
+    top: -350px;
+    line-height: 1;
+  }
+  .prj:nth-child(even) .prj_right {
+    width: 65%;
+    top: -350px;
+    line-height: 1;
+  }
+  .prj_btn a {
+    padding: 10px;
   }
   .services_section_watermark {
     /* font-size: 90px;
