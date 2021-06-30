@@ -461,16 +461,16 @@ section {
 }
 
 .prj_img img {
-  height: 130%;
-  width: 130%;
+  height: 180%;
+  width: 180%;
 }
 
 .prj_left {
-  flex: 3;
+  flex: 1;
   position: relative;
 }
 .prj_right {
-  flex: 4;
+  flex: 2;
   position: relative;
   left: -100px;
   padding: 2rem;
@@ -490,7 +490,7 @@ section {
   left: 50px;
 }
 .prj:nth-child(even) .prj_left {
-  right: 100px;
+  right: 300px;
 }
 .prj_right p {
   margin-top: 1rem;
@@ -816,7 +816,10 @@ section {
 @media screen and (max-width: 1203px) {
   .section_button a {
     padding: 4% 20%;
-    font-size: 10px;
+    font-size: 12px;
+  }
+  .hero_section {
+    background-image: url(/images/hero_background.jpg);
   }
 
   .name_text {
@@ -896,7 +899,7 @@ section {
 
   .about_button::before {
     position: absolute;
-    top: -180%;
+    top: -200%;
     left: 50%;
     width: 150%;
     transform: translateX(-50%);
@@ -938,15 +941,20 @@ section {
     height: 70px;
   }
   .project_section_watermark {
-    font-size: 160px;
-    left: -3%;
+    font-size: 180px;
+    left: 5%;
+    top: -50px;
   }
   .project_subHeading {
     font-size: 10px;
   }
+  .prj_btn a {
+    padding: 10px 20px;
+  }
   .services_section_watermark {
-    font-size: 170px;
-    left: -10%;
+    font-size: 190px;
+    left: 1%;
+    top: -60px;
   }
   .services_blue_box1 {
     left: -28%;
