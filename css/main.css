@@ -72,11 +72,11 @@ section {
   height: 100vh;
   max-width: 100vw;
   font-family: section_text;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(/images/hero_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
 }
 .hero_section::after {
@@ -818,10 +818,7 @@ section {
     padding: 4% 20%;
     font-size: 12px;
   }
-  .hero_section {
-    background-image: url(/images/hero_background.jpg);
-  }
-
+ 
   .name_text {
     font-size: 40px;
     letter-spacing: 4px;
@@ -948,6 +945,14 @@ section {
   .project_subHeading {
     font-size: 10px;
   }
+
+  .prj:nth-child(1) .prj_right{
+    padding: 1rem 2rem;
+  }
+  .prj:nth-child(1) .prj_desc{
+    line-height: 1.5;
+  }
+
   .prj_btn a {
     padding: 10px 20px;
   }
