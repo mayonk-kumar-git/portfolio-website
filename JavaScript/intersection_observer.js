@@ -10,7 +10,7 @@ const observedElems = [...projects, heroSection, aboutSection, skillsSection, se
 console.log(observedElems);
 
 const AnimationOnScrollOptions = {
-  threshold: 0.6,
+  threshold: 0.5,
 };
 
 const AnimationOnScroll = new IntersectionObserver(
