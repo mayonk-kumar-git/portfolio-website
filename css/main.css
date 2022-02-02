@@ -29,8 +29,8 @@ body {
 section {
   max-width: 75vw;
   margin: 50px auto;
-	transition: 0.9s all ease-in-out;
-	transform: translateY(30px);
+	transition: 1s all ease-in-out;
+	transform: translateY(-40px);
 	opacity: 0;
 }
 section.appear{
@@ -493,7 +493,7 @@ section.appear{
   margin: 5rem auto;
   position: relative;
 	transition: .8s all ease-in-out;
-	transform: translateY(30px);
+	transform: translateY(-40px);
 	opacity: 0;
 }
 .prj.appear {	
@@ -509,12 +509,8 @@ section.appear{
   flex: 1;
   position: relative;
 	transition: 0.8s all ease-in-out;
-	/* transform: translateX(-30px);
-	opacity: 0; */
 }
-/* .prj_left.appear {	
-	transform: translateX(0px);
-	opacity: 1;} */
+
 
 
 .prj_right {
@@ -526,13 +522,8 @@ section.appear{
   background-color: rgb(10, 10, 10);
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.9);
   transition: 0.9s all ease-in-out;
-	/* transform: translateX(10px);
-	opacity: 0; */
 }
-/* .prj_right.appear{
-	transform: translateX(0px);
-	opacity: 1;
-} */
+
 
 .prj_right:hover {
   transform: scale(1.05);
@@ -558,51 +549,29 @@ section.appear{
   letter-spacing: 1.2px;
   color: #31f7ff;
 	transition: all 0.6s ease-in-out;
-	/* transform: translateX(20px);
-	opacity: 0; */
 }
-/* .prj_title.appear{
-	transform: translateX(0);
-	opacity: 1;
-} */
 
 
 .prj_subtitle {
 	color: rgba(255, 255, 255, 0.4);
   letter-spacing: 2px;
 	transition: all .7s ease-in-out;
-	/* transform: translateX(30px);
-	opacity: 0; */
 }
-/* .prj_subtitle.appear{
-	transform: translateX(0);
-	opacity: 1;
-} */
 
 .prj_desc {
 	font-size: 15px;
   line-height: 1.8;
   letter-spacing: 2px;
 	transition: all .9s ease-in-out;
-	/* transform: translateX(40px);
-	opacity: 0; */
 }
-/* .prj_desc.appear{
-	transform: translateX(0);
-	opacity: 1;
-} */
+
 
 .prj_btn {
 	margin-top: 2rem;
   margin-bottom: 1rem;
 	transition: all 1s ease-in;
-	/* transform: translateX(10px);
-	opacity: 0; */
 }
-/* .prj_btn.appear{
-	transform: translateX(0);
-	opacity: 1;
-} */
+
 .prj_btn a {
   padding: 10px;
 }
