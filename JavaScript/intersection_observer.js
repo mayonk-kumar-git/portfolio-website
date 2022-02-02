@@ -1,12 +1,16 @@
 const projects = document.getElementsByClassName("prj");
-const sections = document.querySelectorAll("section");
+const heroSection = document.getElementById("hero_section_Id")
+const aboutSection = document.getElementById("about_section_Id")
+const skillsSection = document.getElementById("skill_section_Id")
+const servicesSection = document.getElementById("services_section_Id")
+const contactSection = document.getElementById("contact_section_Id")
 
-const observedElems = [...sections, ...projects];
+const observedElems = [...projects, heroSection, aboutSection, skillsSection, servicesSection, contactSection];
 
 console.log(observedElems);
 
 const AnimationOnScrollOptions = {
-  threshold: 0.1,
+  threshold: 0.6,
 };
 
 const AnimationOnScroll = new IntersectionObserver(

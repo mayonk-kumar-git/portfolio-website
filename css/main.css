@@ -30,7 +30,7 @@ section {
   max-width: 75vw;
   margin: 50px auto;
 	transition: 1s all ease-in-out;
-	transform: translateY(-40px);
+	transform: translateY(50px);
 	opacity: 0;
 }
 section.appear{
@@ -400,9 +400,14 @@ section.appear{
 
 /***************************** Skills Section End ******************************************/
 /***************************** Project Section Start ******************************************/
+
+
+/* At the top the section style is defined for all the section as the default style for on Scroll transition, below designs are only for project section */
 .project_section {
   position: relative;
   margin-top: 200px;
+	transform: translateY(0);
+	opacity: 1;
 }
 .project_section_watermark {
   position: absolute;
@@ -493,7 +498,7 @@ section.appear{
   margin: 5rem auto;
   position: relative;
 	transition: .8s all ease-in-out;
-	transform: translateY(-40px);
+	transform: translateY(50px);
 	opacity: 0;
 }
 .prj.appear {	
